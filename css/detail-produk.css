@@ -1,0 +1,78 @@
+main {
+  position: relative;
+  top: 100px;
+  margin-bottom: 100px;
+}
+main .back img {
+  width: 50px;
+  height: 50px;
+  margin-left: 50px;
+  margin-top: -30px;
+  margin-bottom: -30px;
+}
+.konten {
+  display: flex;
+  flex-direction: row;
+}
+.konten .isiKonten {
+  float: right;
+  width: 70%;
+  padding: 20px;
+  margin: 50px 30px 30px 10px;
+}
+aside {
+  float: left;
+  width: 30%;
+  padding: 20px;
+  margin: 30px 10px 30px 30px;
+}
+aside img {
+  height: 100%;
+  width: 100%;
+  max-width: 400px;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+h3 {
+  font-size: 40px;
+}
+.isiKonten h5 {
+  margin-top: 10px;
+}
+.teksBawah {
+  margin: 20px 50px 20px 50px;
+}
+main .harga-pesan {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 30px 0;
+}
+footer {
+  margin-top: 150px;
+}
+
+#checkout-klik {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#checkout-klik:hover {
+  background-color: #e04000;
+}
+
+#paragraf {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+}
+
+#harga{
+  font-size: 36px;
+}

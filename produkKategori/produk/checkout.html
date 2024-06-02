@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jasita</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/checkout.css" />
+    <script
+      type="text/javascript"
+      src="https://app.midtrans.com/snap/snap.js"
+      data-client-key="Mid-client-91Id0i-4ZFJvCKiT"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar">
+          <div class="logo">
+            <a href="../../index.html"
+              ><img src="../../asset/logo-gif-icon/logo-Jasita.png"
+            /></a>
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="../../../index.html">Beranda</a></li>
+              <li><a href="../../../kategori.html">Kategori</a></li>
+              <li><a href="../../../tentangKami.html">Tentang Kami</a></li>
+              <li><a href="../../../kontakKami.html">Kontak Kami</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="back">
+        <a href="../../../kategori.html"
+          ><img src="../../asset/logo-gif-icon/ikon-balik.png" alt="back"
+        /></a>
+      </div>
+      <h1 id="judul">Formulir Pemesanan</h1>
+      <div class="jasa-yang-dipesan">
+        <img
+          id="gambar"
+          src="../../asset/logo-gif-icon/ikon-template.png"
+          alt="js ga jalan"
+        />
+        <div class="detail-jasa-dipesan">
+          <h3 id="nama-jasa-dipesan">p</h3>
+          <h3 id="pekerjaan">p</h3>
+          <h3 id="harga">p</h3>
+        </div>
+      </div>
+      <div class="form-input">
+        <form action="" id="form-data">
+          <label for="nama" class="form">
+            <span>Nama</span>
+            <input
+              id="pelanggan-nama"
+              name="nama"
+              type="text"
+              placeholder="Nama"
+              required
+          /></label>
+          <label for="alamat" class="form">
+            <span>Alamat</span>
+            <input
+              id="pelanggan-alamat"
+              name="alamat"
+              type="text"
+              placeholder="Alamat"
+              required
+          /></label>
+          <label for="nomorWa" class="form">
+            <span>Nomor WhatsApp</span>
+            <input
+              id="pelanggan-nomorWa"
+              name="noHp"
+              type="tel"
+              placeholder="Nomor WhatsApp"
+              required
+          /></label>
+          <label for="email" class="form">
+            <span>Email</span>
+            <input
+              id="pelanggan-email"
+              name="email"
+              type="email"
+              placeholder="Email"
+              required
+          /></label>
+          <label for="tanggal" class="form">
+            <span>Tanggal</span>
+            <input id="tanggal-sesi" name="tanggalSesi" type="date" required
+          /></label>
+          <label for="jam" class="form">
+            <span>Jam</span>
+            <input
+              id="jam-sesi"
+              name="jamSesi"
+              type="time"
+              step="1800"
+              required
+          /></label>
+          <label for="jumlah-sesi" class="form">
+            <span>Jumlah Pesanan</span>
+            <input
+              id="pelanggan-jumlah-sesi"
+              name="jumlahSesi"
+              type="number"
+              placeholder="Jumlah sesi yang dipesan"
+              min="1"
+              max="8"
+              required
+          /></label>
+          <input id="total-pesanan" name="total-pesanan" type="hidden" />
+          <input id="item-pesanan-nama" name="item-nama" type="hidden" />
+          <input
+            id="item-pesanan-pekerjaan"
+            name="item-pekerjaan"
+            type="hidden"
+          />
+          <input id="item-pesanan-umur" name="item-umur" type="hidden" />
+        </form>
+        <h3 id="error-message" class="form"></h3>
+      </div>
+      <div class="container">
+        <div class="total-harga">
+          <h3>Biaya admin :</h3>
+          <h3 id="admin">Rp 5.000</h3>
+        </div>
+        <div class="total-harga">
+          <h3>Total harga :</h3>
+          <h3 id="total"></h3>
+        </div>
+        <br />
+        <div class="total-harga">
+          <h3>Total pembayaran :</h3>
+          <h3 id="total-bayar"></h3>
+        </div>
+        <button
+          class="total-harga"
+          type="submit"
+          id="checkout-Button"
+          onclick="validate()"
+        >
+          Bayar
+        </button>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="nama">Jasita</div>
+        <div class="kontak">
+          <a href="https://wa.me/6288888888888"
+            ><img src="../../asset/logo-gif-icon/ikon-wa.png" alt="ikon-wa"
+          /></a>
+          <a href="https://www.discord.com/"
+            ><img src="../../asset/logo-gif-icon/ikon-dc.png" alt="ikon-dc"
+          /></a>
+          <a href="https://www.facebook.com/"
+            ><img src="../../asset/logo-gif-icon/ikon-fb.png" alt="ikon-fb"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img src="../../asset/logo-gif-icon/ikon-ig.png" alt="ikon-ig"
+          /></a>
+        </div>
+        <div class="cr">Jasita © 2024</div>
+      </div>
+    </footer>
+    <script src="add.js"></script>
+    <script src="../../js/validasi.js"></script>
+  </body>
+</html>

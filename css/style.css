@@ -1,0 +1,103 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 20px;
+  font-size: 15px;
+}
+html {
+  overflow-y: scroll;
+  background-color: #dedede;
+}
+.navbar {
+  width: 1000px;
+  margin: auto;
+}
+header nav {
+  z-index: 100;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  border-bottom: 1px solid#b1b1b1;
+  line-height: 60px;
+  width: 100%;
+  background-color: #AF8F6F;
+}
+header .logo {
+  float: left;
+  position: relative;
+  line-height: 55px;
+  text-align: center;
+}
+header .logo img {
+  width: 200px;
+  vertical-align: middle;
+}
+header nav .menu {
+  float: right;
+  height: 60px;
+  max-width: 600px;
+}
+header nav .menu ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+header nav .menu ul li {
+  list-style-type: none;
+  float: left;
+  line-height: 60px;
+}
+
+header nav ul li a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 0px 16px;
+}
+header nav ul li a img {
+  max-height: 40px;
+  vertical-align: middle;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+header nav .menu ul li .badge-jumlah {
+  display: inline-block;
+  padding: 1px 5px;
+  background-color: red;
+  border-radius: 6px;
+  font-size: 12px;
+  position: absolute;
+  top: 30px;
+  right: 140px;
+}
+footer {
+  background-color: #74512D;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+footer .kontak img {
+  width: 30px;
+  height: 30px;
+}
+footer .nama {
+  text-align: center;
+  font-size: 40px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+footer .cr {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}

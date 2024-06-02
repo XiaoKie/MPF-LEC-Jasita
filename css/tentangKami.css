@@ -1,0 +1,36 @@
+main {
+  position: relative;
+  top: 100px;
+  margin-bottom: 200px;
+}
+.konten {
+  display: flex;
+  flex-direction: row;
+}
+.konten .isiKonten {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  margin: 10px;
+}
+aside {
+  float: right;
+  width: 50%;
+  padding: 20px;
+  margin: 10px;
+}
+aside img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+h3 {
+  font-size: 40px;
+}
+.isiKonten p {
+  margin-top: 20px;
+}
+.teksBawah {
+  margin: 10px;
+}

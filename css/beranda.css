@@ -1,0 +1,237 @@
+header .videotron {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+header .videotron video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  z-index: -2;
+}
+header .videotron .judul-utama {
+  color: #fff;
+  z-index: 100;
+  text-align: center;
+  position: relative;
+  top: 50%;
+}
+header .videotron .judul-utama h3 {
+  font-size: 40px;
+  margin: 0 0 10px 0;
+}
+header .videotron .judul-utama p {
+  margin: 0 0 20px 0;
+}
+header .videotron .judul-utama .klik {
+  background-color: #AF8F6F;
+  height: 40px;
+  line-height: 42px;
+  display: inline-block;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 0 10px 0 10px;
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+header .videotron .overlay {
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 50%;
+}
+
+main .konten .banner {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 25px;
+  margin-top: 50px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+main .konten .banner .image {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-height: 500px;
+  transition: 0.5s ease-in-out;
+}
+main .konten .banner .image img {
+  width: 100%;
+  object-fit: cover;
+}
+#slide1:target ~ .image {
+  margin-left: 0px;
+}
+#slide2:target ~ .image {
+  margin-left: -100%;
+}
+#slide3:target ~ .image {
+  margin-left: -200%;
+}
+#slide4:target ~ .image {
+  margin-left: -300%;
+}
+.banner .navigasi-banner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+main .konten .banner .navigasi-banner a {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  font-size: 0px;
+  background-color: #AF8F6F;
+  margin: 10px;
+  border-radius: 50%;
+  transition: 1s;
+}
+main .konten .banner .navigasi-banner a:hover {
+  background-color: #7469b6;
+}
+body .rekomendasiFull {
+  overflow: hidden;
+}
+main .konten .judul-rekomendasi {
+  position: relative;
+  left: 100px;
+  margin: 100px 0 0px 0;
+}
+main .konten .judul-rekomendasi h2 {
+  font-size: 40px;
+}
+main .konten .judul-rekomendasi img {
+  height: 60px;
+  width: 60px;
+  vertical-align: middle;
+}
+main .konten .judul-rekomendasi-p {
+  position: relative;
+  left: 100px;
+  margin: 0;
+}
+main .konten .judul-rekomendasi-p h2 {
+  font-size: 40px;
+}
+main .konten .judul-rekomendasi-p img {
+  height: 60px;
+  width: 60px;
+  vertical-align: middle;
+}
+main .konten .rekomendasi {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin: 30px 100px 100px 100px;
+  grid-gap: 30px;
+  align-items: center;
+}
+main .konten .rekomendasi > article {
+  box-shadow: 5px 3px 20px 0 black;
+  text-align: center;
+  background-color: whitesmoke;
+  width: 150px;
+  height: 180px;
+  border-radius: 10px;
+}
+main .konten .rekomendasi > article img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+main .konten .rekomendasi > article:hover {
+  transform: scale(1.2);
+}
+main .konten .rekomendasi > article a {
+  text-decoration: none;
+}
+
+main .konten .palingSeringDipesan {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 30px 100px 100px 100px;
+  grid-gap: 30px;
+  align-items: center;
+}
+main .konten .palingSeringDipesan > article {
+  box-shadow: 5px 3px 20px 0 black;
+  background-color: whitesmoke;
+  width: 240px;
+  height: 280px;
+  border-radius: 10px;
+  text-align: left;
+  margin-top: 20px;
+}
+main .konten .palingSeringDipesan > article img {
+  width: 240px;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+main .konten .palingSeringDipesan > article:hover {
+  transform: scale(1.2);
+}
+main .konten .palingSeringDipesan > article a {
+  text-decoration: none;
+}
+main .konten .palingSeringDipesan > article h3,
+h5 {
+  margin-left: 5px;
+}
+
+main .konten .BaruDitambahkan {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 30px 100px 100px 100px;
+  grid-gap: 30px;
+  align-items: center;
+}
+main .konten .BaruDitambahkan > article {
+  box-shadow: 5px 3px 20px 0 black;
+  background-color: whitesmoke;
+  width: 240px;
+  height: 260px;
+  border-radius: 10px;
+  text-align: left;
+  margin-top: 20px;
+}
+main .konten .BaruDitambahkan > article img {
+  width: 240px;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+main .konten .BaruDitambahkan > article:hover {
+  transform: scale(1.2);
+}
+main .konten .BaruDitambahkan > article a {
+  text-decoration: none;
+}
+main .konten .BaruDitambahkan > article h3,
+h5 {
+  margin-left: 5px;
+}
+main .konten .palingSeringDipesanFull {
+  overflow-x: hidden;
+}
+main .konten .BaruDitambahkanFull {
+  overflow-x: hidden;
+}
+main h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}

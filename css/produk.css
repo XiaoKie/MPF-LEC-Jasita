@@ -1,0 +1,68 @@
+main {
+  position: relative;
+  top: 100px;
+  margin-bottom: 100px;
+}
+.d-none {
+  display: none;
+}
+main .searchBar {
+  box-shadow: none;
+  justify-content: center;
+  display: flex;
+}
+main .searchBar .inputBar {
+  border-radius: 20px;
+  width: 50%;
+  text-align: left;
+  padding: 5px;
+}
+main .itemProduk {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 30px 100px 100px 100px;
+  grid-gap: 30px;
+  align-items: center;
+}
+main .itemProduk .itemJasa {
+  box-shadow: 5px 3px 20px 0 black;
+  background-color: whitesmoke;
+  width: 240px;
+  height: 260px;
+  border-radius: 10px;
+  text-align: left;
+  margin-top: 20px;
+}
+main .itemProduk .itemJasa img {
+  width: 240px;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+main .itemProduk .itemJasa:hover {
+  transform: scale(1.2);
+}
+main .itemProduk .itemJasa a {
+  text-decoration: none;
+}
+main .itemProduk .itemJasa h3,
+h5 {
+  margin-left: 5px;
+}
+main .back img {
+  width: 50px;
+  height: 50px;
+  margin-left: 50px;
+  margin-top: 0px;
+  margin-bottom: -30px;
+  position: absolute;
+}
+footer {
+  margin-top: 150px;
+}
+.judul {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
